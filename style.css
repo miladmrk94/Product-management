@@ -1,0 +1,314 @@
+* {
+    font-family: sans-serif;
+    background-color: #08233D;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 766px;
+}
+
+#top-tag {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, #F76142, #F4A511);
+
+
+}
+
+h2 {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#filter-tag {
+    padding: 50px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 99%;
+    height: 160px;
+    background-color: #0E2B48;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#search-input {
+    width: 20%;
+    height: 30px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: #608dff44;
+    border: solid;
+    cursor: auto;
+    outline: none;
+    padding: 6px;
+    font-size: medium;
+    border-radius: 20px;
+    margin-left: 20px;
+
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: 1;
+    /* Firefox */
+}
+
+label {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+select {
+    text-align: center;
+    margin: 20px;
+    color: #ffffff;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+
+}
+
+#form-tag {
+    text-align: center;
+    margin: 50px;
+}
+
+
+#divPageTwo {
+    padding: 50px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 99%;
+    height: 160px;
+    background-image: linear-gradient(to right, #425df7, #5e80f1);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#butBack {
+
+    display: block;
+    margin-bottom: 30px;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #08233D;
+}
+
+#butBack:hover {
+    color: #f8a894;
+    transition: 0.5s;
+    text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+#productTitle,
+#productPrice,
+#form-tag input {
+    width: 20%;
+    height: 30px;
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    background-color: #1aab8954;
+    border: solid;
+    cursor: auto;
+    outline: none;
+    padding: 6px;
+    font-size: medium;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+#buttonRemove {
+    background: #f75348;
+    color: #fff;
+    border: none;
+    width: 120px;
+    position: relative;
+    height: 40px;
+    font-weight: 300;
+    font-size: medium;
+    transition: 800ms ease all;
+    outline: none;
+    border-radius: 20px;
+
+}
+
+
+
+#but-add {
+    background: #F4A511;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 40px;
+    font-size: small;
+    font-weight: bold;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    border-radius: 20px;
+}
+
+#but-add:hover {
+    background: #fff;
+    color: #F4A511;
+    border-radius: 20px;
+
+}
+
+#but-add:before,
+#but-add:after {
+    content: '';
+    position: absolute;
+
+    background: #F4A511;
+    transition: 400ms ease all;
+    border-radius: 20px;
+
+}
+
+#but-add:after {
+
+    border-radius: 20px;
+
+}
+
+#but-add:hover:before,
+#but-add:hover:after {
+    transition: 800ms ease all;
+    border-radius: 20px;
+
+}
+
+
+
+#show-tag {
+    padding: 50px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 70%;
+    height: 160px;
+
+}
+
+
+
+
+#show-tag div {
+    box-sizing: border-box;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+    list-style: none;
+    background-image: linear-gradient(to right, #425df7, #5e80f1);
+    padding: 10px;
+    margin: 13px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: 0.5s;
+}
+
+#show-tag a {
+
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+    margin: 13px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+#show-tag a:hover {
+    transition: 0.3s;
+    color: #ff7b00;
+
+}
+
+#show-tag button {
+    background: #f75348;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 25px;
+    font-size: small;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+
+}
+
+
+/*
+
+#but-hazf:hover {
+    background: #f75348;
+    color: #ffffff;
+}
+
+#but-hazf:before,
+#but-hazf:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #ffffff;
+    transition: 400ms ease all;
+}
+
+#but-hazf:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+#but-hazf:hover:before,
+#but-hazf:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+} */
+
+
+#jAlert_table,
+#jAlert_th,
+#jAlert_td {
+    border: 2px solid blue;
+    background-color: lightblue;
+    border-collapse: collapse;
+    width: 100px;
+}
+
+#jAlert_th,
+#jAlert_td {
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#jAlert {
+    /* Position fixed */
+    position: fixed;
+    /* Center it! */
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
