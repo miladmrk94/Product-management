@@ -49,3 +49,9 @@ window.addEventListener("storage", (e) => {
     searching(product, handelProduct);
   }
 });
+
+const milad = moment();
+
+const now = milad.locale("fa");
+
+console.log(now.format("MMMM Do YYYY,h:mm:ss a"));
