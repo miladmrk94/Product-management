@@ -55,3 +55,16 @@ document.querySelector("#sort").addEventListener("change", (e) => {
   handelProduct.sortBy = e.target.value;
   searching(product, handelProduct);
 });
+
+let xxx = "milad";
+
+console.log(typeof xxx);
+
+const zx = 29;
+
+try {
+  zxs === "30";
+  console.log(zx);
+} catch (error) {
+  console.log("erroooor");
+}

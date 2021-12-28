@@ -1,7 +1,11 @@
 //-------------*** check empty or no
 const getSaveProducts = () => {
   const getProductOnLocal = localStorage.getItem("localProduct");
-  return getProductOnLocal != null ? JSON.parse(getProductOnLocal) : [];
+  try {
+    return getProductOnLocal != null ? JSON.parse(getProductOnLocal) : [];
+  } catch (error) {
+    return [];
+  }
   // if (getProductOnLocal != null) {
   //   return JSON.parse(getProductOnLocal);
   // } else {
