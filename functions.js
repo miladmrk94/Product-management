@@ -1,11 +1,12 @@
 //-------------*** check empty or no
 const getSaveProducts = () => {
   const getProductOnLocal = localStorage.getItem("localProduct");
-  if (getProductOnLocal != null) {
-    return JSON.parse(getProductOnLocal);
-  } else {
-    return [];
-  }
+  return getProductOnLocal != null ? JSON.parse(getProductOnLocal) : [];
+  // if (getProductOnLocal != null) {
+  //   return JSON.parse(getProductOnLocal);
+  // } else {
+  //   return [];
+  // }
 };
 
 //--------------*** save product in localStorage
@@ -32,8 +33,36 @@ const toggleProduct = (id) => {
   }
 };
 
+//-------------*** sort
+const sortProduct = (product, sortBy) => {
+  if (sortBy === "byEdited") {
+    return product.sort((a, b) => {
+      if (a.updated > b.updated) {
+        return -1;
+      } else if (a.updated < b.updated) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+  } else if (sortBy === "byCreated") {
+    return product.sort((a, b) => {
+      if (a.created > b.created) {
+        return -1;
+      } else if (a.created < b.created) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+  } else {
+    return product;
+  }
+};
+
 //-------------*** searching
 const searching = (product, productName) => {
+  product = sortProduct(product, productName.sortBy);
   let value = product.filter((item) => {
     return item.title.toLowerCase().includes(productName.key.toLowerCase());
   });

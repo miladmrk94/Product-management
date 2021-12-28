@@ -5,6 +5,7 @@ let product = getSaveProducts();
 const handelProduct = {
   key: "",
   handelExist: false,
+  sortBy: "byEdited",
 };
 
 searching(product, handelProduct);
@@ -18,11 +19,15 @@ document.querySelector("#form-tag").addEventListener("submit", (e) => {
   e.preventDefault();
   if (e.target.elements.textInput.value) {
     const id = uuidv4();
+
+    const timestamp = moment().valueOf();
     product.push({
       id: id,
       title: e.target.elements.textInput.value,
       price: "",
       exist: true,
+      created: timestamp,
+      updated: timestamp,
     });
   } else {
     alert("لطفا عنوان محصول را وارد کنید");
@@ -38,10 +43,6 @@ document.querySelector("#check-box").addEventListener("change", (e) => {
   searching(product, handelProduct);
 });
 
-document.querySelector("#select-tag").addEventListener("change", (e) => {
-  console.log(e.target.value);
-});
-
 //-------------*** live change
 window.addEventListener("storage", (e) => {
   if (e.key === "localProduct") {
@@ -50,8 +51,7 @@ window.addEventListener("storage", (e) => {
   }
 });
 
-const milad = moment();
-
-const now = milad.locale("fa");
-
-console.log(now.format("MMMM Do YYYY,h:mm:ss a"));
+document.querySelector("#sort").addEventListener("change", (e) => {
+  handelProduct.sortBy = e.target.value;
+  searching(product, handelProduct);
+});

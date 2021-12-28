@@ -1,6 +1,7 @@
 const titleElement = document.querySelector("#productTitle");
 const priceElement = document.querySelector("#productPrice");
 const removeElement = document.querySelector("#buttonRemove");
+const dateElement = document.querySelector("#lastEdited");
 
 const productId = location.hash.substring(1);
 
@@ -16,15 +17,24 @@ if (productW === undefined) {
 
 titleElement.value = productW.title;
 // titleElement.value = productW.price;
+dateElement.textContent = `آخرین ویرایش ${moment(productW.updated)
+  .locale("fa")
+  .fromNow()}`;
 
 //-------------*** input changeName product & price
 titleElement.addEventListener("input", (e) => {
   productW.title = e.target.value;
+  productW.updated = moment().valueOf();
+  dateElement.textContent = `آخرین ویرایش ${moment(productW.updated)
+    .locale("fa")
+    .fromNow()}`;
   saveProductInLocal(product);
 });
 
 priceElement.addEventListener("input", (e) => {
   productW.price = e.target.value;
+  productW.updated = moment().valueOf();
+
   saveProductInLocal(product);
 });
 
@@ -47,5 +57,8 @@ window.addEventListener("storage", (e) => {
     }
     titleElement.value = productW.title;
     // titleElement.value = productW.price;
+    dateElement.textContent = `آخرین ویرایش ${moment(productW.updated)
+      .locale("fa")
+      .fromNow()}`;
   }
 });

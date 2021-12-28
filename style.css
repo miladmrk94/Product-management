@@ -131,6 +131,12 @@ select {
     margin-left: 20px;
 }
 
+#lastEdited {
+    color: #fff;
+    margin-left: 15px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 #buttonRemove {
     background: #f75348;
     color: #fff;
