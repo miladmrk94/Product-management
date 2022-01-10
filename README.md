@@ -4,26 +4,26 @@ Product management with (pure javascript)
 features:
 
 
-  <summary>Table of Contents</summary>
+  <summary>features:</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#">Built With</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#">Prerequisites</a></li>
+        <li><a href="#">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#">Usage</a></li>
+    <li><a href="#">Roadmap</a></li>
+    <li><a href="#">Contributing</a></li>
+    <li><a href="#">License</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Acknowledgments</a></li>
   </ol>
 
