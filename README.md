@@ -1,11 +1,30 @@
 # Product-management
 Product management with (pure javascript)
 
-
-
 <summary><h3>features:</h3></summary>
 <ol>
+  <li><a>All information is stored in local storage</a></li>
   <li>
-    <a>About The Project</a>
+    <a>Ability to edit and delete products and their prices</a>
+  </li>
+
+  <li>
+    <a
+      >Each product has its own link and editing <br />
+      products is done without refreshing</a
+    >
   </li>
 </ol>
+
+<li>
+  <a>Search by characters</a>
+</li>
+<li>
+  <a>Edit product names and prices</a>
+</li>
+<li>
+  <a>Sort products by last edited or created time</a>
+</li>
+<li>
+  <a>Create filters based on existing and non-existing products</a>
+</li>
