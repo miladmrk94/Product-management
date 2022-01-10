@@ -1,9 +1,9 @@
-# Product-management (مدیریت محصولات)
+# Product-management-(مدیریت محصولات)
 Product management with (pure javascript)
 
-<summary><h3>features:</h3></summary>
+<summary><h3>Features:</h3></summary>
 <ol>
-  <li><a>javascript functional programming</a></li>
+  <li><a>Javascript functional programming</a></li>
   <li><a>All information is stored in local storage</a></li>
   <li>
     <a>Ability to edit and delete products and their prices</a>
