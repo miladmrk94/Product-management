@@ -3,6 +3,7 @@ Product management with (pure javascript)
 
 <summary><h3>features:</h3></summary>
 <ol>
+  <li><a>javascript functional programming</a></li>
   <li><a>All information is stored in local storage</a></li>
   <li>
     <a>Ability to edit and delete products and their prices</a>
@@ -28,3 +29,4 @@ Product management with (pure javascript)
     <a>Create filters based on existing and non-existing products</a>
   </li>
 </ol>
+
