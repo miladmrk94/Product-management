@@ -3,7 +3,7 @@ Product management with (pure javascript)
 
 
 
-<summary style="font-size:2rem">features:</summary>
+<summary><h4>features:</h4></summary>
 <ol>
   <li>
     <a>About The Project</a>
