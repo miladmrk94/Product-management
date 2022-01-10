@@ -14,17 +14,17 @@ Product management with (pure javascript)
       products is done without refreshing</a
     >
   </li>
-</ol>
 
-<li>
-  <a>Search by characters</a>
-</li>
-<li>
-  <a>Edit product names and prices</a>
-</li>
-<li>
-  <a>Sort products by last edited or created time</a>
-</li>
-<li>
-  <a>Create filters based on existing and non-existing products</a>
-</li>
+  <li>
+    <a>Search by characters</a>
+  </li>
+  <li>
+    <a>Edit product names and prices</a>
+  </li>
+  <li>
+    <a>Sort products by last edited or created time</a>
+  </li>
+  <li>
+    <a>Create filters based on existing and non-existing products</a>
+  </li>
+</ol>
