@@ -92,6 +92,7 @@ const CreatProductDOM = (productX) => {
   const checkBoxProduct = document.createElement("input");
   const spanProductName = document.createElement("a");
   const butRemoveProduct = document.createElement("button");
+  const productPrice = document.createElement("a");
 
   checkBoxProduct.setAttribute("type", "checkbox");
   divProduct.appendChild(checkBoxProduct);
@@ -106,6 +107,9 @@ const CreatProductDOM = (productX) => {
   spanProductName.textContent = productX.title;
   spanProductName.setAttribute("href", `./edit-product.html#${productX.id}`);
   divProduct.appendChild(spanProductName);
+
+  productPrice.textContent = productX.price;
+  divProduct.appendChild(productPrice);
 
   butRemoveProduct.textContent = "حذف";
   divProduct.appendChild(butRemoveProduct);

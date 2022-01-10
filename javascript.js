@@ -24,7 +24,7 @@ document.querySelector("#form-tag").addEventListener("submit", (e) => {
     product.push({
       id: id,
       title: e.target.elements.textInput.value,
-      price: "",
+      price: e.target.elements.textInputPrice.value,
       exist: true,
       created: timestamp,
       updated: timestamp,
@@ -34,6 +34,7 @@ document.querySelector("#form-tag").addEventListener("submit", (e) => {
   }
   saveProductInLocal(product);
   e.target.elements.textInput.value = "";
+  e.target.elements.textInputPrice.value = "";
   searching(product, handelProduct);
 });
 
@@ -56,15 +57,28 @@ document.querySelector("#sort").addEventListener("change", (e) => {
   searching(product, handelProduct);
 });
 
-let xxx = "milad";
+const pro = [
+  {
+    title: "book1",
+    price: 200,
+  },
+  {
+    title: "book2",
+    price: 300,
+  },
+  {
+    title: "book3",
+    price: 500,
+  },
+];
 
-console.log(typeof xxx);
+getPro = () => {
+  setTimeout(() => {
+    const fetch = pro.map((item) => {
+      return `product:${item.title} price:${item.price}`;
+    });
+    console.log(fetch);
+  }, 2000);
+};
 
-const zx = 29;
-
-try {
-  zxs === "30";
-  console.log(zx);
-} catch (error) {
-  console.log("erroooor");
-}
+getPro();

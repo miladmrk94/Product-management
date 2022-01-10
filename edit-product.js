@@ -16,7 +16,7 @@ if (productW === undefined) {
 }
 
 titleElement.value = productW.title;
-// titleElement.value = productW.price;
+priceElement.value = productW.price;
 dateElement.textContent = `آخرین ویرایش ${moment(productW.updated)
   .locale("fa")
   .fromNow()}`;
@@ -34,7 +34,9 @@ titleElement.addEventListener("input", (e) => {
 priceElement.addEventListener("input", (e) => {
   productW.price = e.target.value;
   productW.updated = moment().valueOf();
-
+  dateElement.textContent = `آخرین ویرایش ${moment(productW.updated)
+    .locale("fa")
+    .fromNow()}`;
   saveProductInLocal(product);
 });
 
@@ -56,7 +58,7 @@ window.addEventListener("storage", (e) => {
       location.assign("/index.html");
     }
     titleElement.value = productW.title;
-    // titleElement.value = productW.price;
+    priceElement.value = productW.price;
     dateElement.textContent = `آخرین ویرایش ${moment(productW.updated)
       .locale("fa")
       .fromNow()}`;
